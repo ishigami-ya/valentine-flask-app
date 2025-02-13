@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Would You Be My Valentine?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Would you be my Valentine?</h1>
+    <img src="https://i.ibb.co/Gvyd0Vkt/love-unscreen.gif" alt="Cute Valentine's GIF">
+    
+    <form action="/answer" method="POST">
+        <button type="submit" name="response" value="yes" class="yes-button">Yes</button>
+        <button type="submit" name="response" value="no" class="no-button">Nuh uh</button>
+    </form>    
+
+    <footer>
+        <p>Made by Ishigami (Yassin Amiri)</p>
+    </footer>
+</body>
+</html>
